@@ -1,0 +1,19 @@
+ax2 + 2hxy + by2 + 2gx + 2fy + c = 0
+
+d = abc + 2fgh - af2 - bg2 - ch2
+
+d = 0:
+    ab - h2 = 0             straight line
+    ab - h2 > 0             pair of intersecting lines
+        a + b = 0           pair of perpendicular lines
+    ab - h2 < 0             pair of non-intersecting lines
+
+d !=0:
+    h = 0 && a = b          circle
+    ab - h2 = 0             parabola
+    ab - h2 > 0             ellipse
+    ab - h2 < 0             hyperbola
+        a + b = 0           rectangular hyperbola
+
+----------------------------------------------------------------------------------
+straight lines
