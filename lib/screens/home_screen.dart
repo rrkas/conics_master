@@ -1,5 +1,11 @@
 import 'dart:math';
 
+import 'package:conics_master/screens/conic_detail_screens/circle_screen.dart';
+import 'package:conics_master/screens/conic_detail_screens/ellipse_screen.dart';
+import 'package:conics_master/screens/conic_detail_screens/hyperbola_screen.dart';
+import 'package:conics_master/screens/conic_detail_screens/line_screen.dart';
+import 'package:conics_master/screens/conic_detail_screens/pair_of_lines_screen.dart';
+import 'package:conics_master/screens/conic_detail_screens/parabola_screen.dart';
 import 'package:conics_master/screens/notes_view_screen.dart';
 import 'package:conics_master/utils/ref_utils.dart';
 import 'package:flutter/material.dart';
@@ -12,9 +18,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final homeRoutings = [
       _HomeRouting(
-        'Straight\nLines',
+        'Straight Lines',
         Container(color: Colors.white, width: 2, height: 100, transform: Matrix4.rotationZ(-pi / 4), transformAlignment: FractionalOffset.center),
-        () {},
+        () => Navigator.of(context).pushNamed(LineScreen.routeName),
       ),
       _HomeRouting(
         'Circle',
@@ -23,7 +29,7 @@ class HomeScreen extends StatelessWidget {
           height: 100,
           decoration: BoxDecoration(border: Border.all(color: Colors.white, width: 5), shape: BoxShape.circle),
         ),
-        () {},
+        () => Navigator.of(context).pushNamed(CircleScreen.routeName),
       ),
       _HomeRouting(
         'Ellipse',
@@ -32,7 +38,7 @@ class HomeScreen extends StatelessWidget {
           height: 50,
           decoration: BoxDecoration(border: Border.all(color: Colors.white, width: 5), borderRadius: BorderRadius.all(Radius.elliptical(100, 50))),
         ),
-        () {},
+        () => Navigator.of(context).pushNamed(EllipseScreen.routeName),
       ),
       _HomeRouting(
         'Parabola',
@@ -55,7 +61,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ],
         ),
-        () {},
+        () => Navigator.of(context).pushNamed(ParabolaScreen.routeName),
       ),
       _HomeRouting(
         'Hyperbola',
@@ -95,7 +101,7 @@ class HomeScreen extends StatelessWidget {
             ),
           ],
         ),
-        () {},
+        () => Navigator.of(context).pushNamed(HyperbolaScreen.routeName),
       ),
       _HomeRouting(
         'Pair Of Lines',
@@ -105,7 +111,7 @@ class HomeScreen extends StatelessWidget {
             Container(color: Colors.white, width: 2, height: 100, transform: Matrix4.rotationZ(-pi / 4), transformAlignment: FractionalOffset.center),
           ],
         ),
-        () {},
+        () => Navigator.of(context).pushNamed(PairOfLinesScreen.routeName),
       )
     ];
     return Scaffold(

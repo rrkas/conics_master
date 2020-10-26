@@ -19,6 +19,7 @@ class TeXUtils {
   static const alpha = r'\alpha';
   static const beta = r'\beta';
   static const chi = r'\chi';
+  static const delta_big = r'\Delta';
 
   static String sup(String base, String expo) => '({$base})^{$expo}';
   static String sub(String base, String expo) => '({$base})_{$expo}';
