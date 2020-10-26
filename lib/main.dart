@@ -1,4 +1,5 @@
 import 'package:conics_master/screens/home_screen.dart';
+import 'package:conics_master/screens/notes_view_screen.dart';
 import 'package:conics_master/screens/splash_screen.dart';
 import 'package:conics_master/widgets/fade_route_transition.dart';
 import 'package:flutter/material.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       routes: {
         SplashScreen.routeName: (_) => SplashScreen(),
         HomeScreen.routeName: (_) => HomeScreen(),
+        NotesViewScreen.routeName: (_) => NotesViewScreen(),
       },
     );
   }

@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:conics_master/screens/notes_view_screen.dart';
 import 'package:conics_master/utils/ref_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -111,10 +112,7 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(RefUtils.appName),
         actions: [
-          IconButton(
-            icon: Icon(Icons.menu_book),
-            onPressed: () {},
-          ),
+          IconButton(icon: Icon(Icons.menu_book), onPressed: () => Navigator.of(context).pushNamed(NotesViewScreen.routeName)),
           IconButton(
             icon: Text('=', style: TextStyle(fontSize: 40, color: Colors.white)),
             onPressed: () {},

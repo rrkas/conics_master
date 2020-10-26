@@ -1,4 +1,4 @@
-import 'package:conics_master/conics_modules/quad_xy_conic.dart';
+import 'package:conics_master/conics_modules/conic_models.dart';
 
 class DetectConic {
   static ConicTypes getConicType(QuadXYConic conic) {
