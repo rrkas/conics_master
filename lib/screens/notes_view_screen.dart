@@ -13,7 +13,6 @@ class NotesViewScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    const frac = r'\frac{a}{b}';
     return Scaffold(
       appBar: AppBar(
         title: Text('Notes'),

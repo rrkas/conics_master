@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:conics_master/screens/analyze_screen.dart';
 import 'package:conics_master/screens/conic_detail_screens/circle_screen.dart';
 import 'package:conics_master/screens/conic_detail_screens/ellipse_screen.dart';
 import 'package:conics_master/screens/conic_detail_screens/hyperbola_screen.dart';
@@ -119,10 +120,7 @@ class HomeScreen extends StatelessWidget {
         title: Text(RefUtils.appName),
         actions: [
           IconButton(icon: Icon(Icons.menu_book), onPressed: () => Navigator.of(context).pushNamed(NotesViewScreen.routeName)),
-          IconButton(
-            icon: Text('=', style: TextStyle(fontSize: 40, color: Colors.white)),
-            onPressed: () {},
-          ),
+          IconButton(icon: Text('=', style: TextStyle(fontSize: 40, color: Colors.white)), onPressed: () => Navigator.of(context).pushNamed(AnalyzeScreen.routeName)),
         ],
       ),
       body: GridView.builder(

@@ -26,4 +26,5 @@ class TeXUtils {
   static String sqrt(String val, [String pow]) => '\\sqrt${pow == null ? '{$val}' : '[$pow]{$val}'}'; //error in pow
   static String frac(String n, String d) => '\\frac{$n}{$d}';
   static String log(String base, String val) => '\\log_{$base}$val';
+  static String plainText(String text) => '\\text{$text}';
 }

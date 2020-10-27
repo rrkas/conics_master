@@ -1,3 +1,4 @@
+import 'package:conics_master/screens/analyze_screen.dart';
 import 'package:conics_master/screens/conic_detail_screens/circle_screen.dart';
 import 'package:conics_master/screens/conic_detail_screens/ellipse_screen.dart';
 import 'package:conics_master/screens/conic_detail_screens/hyperbola_screen.dart';
@@ -32,6 +33,7 @@ class MyApp extends StatelessWidget {
         SplashScreen.routeName: (_) => SplashScreen(),
         HomeScreen.routeName: (_) => HomeScreen(),
         NotesViewScreen.routeName: (_) => NotesViewScreen(),
+        AnalyzeScreen.routeName: (_) => AnalyzeScreen(),
         //----------------------------------------------------
         LineScreen.routeName: (_) => LineScreen(),
         PairOfLinesScreen.routeName: (_) => PairOfLinesScreen(),
